@@ -18,7 +18,9 @@ void setup()
         digitalWrite(i, PUMPCLOSE);
     }
     initPara();
-    Serial.println( "BootEnd" );    
+//#ifdef DEBUG
+    Serial.println( "BootEnd" ); 
+//#endif
 }
 
 //--<mainLoop>--
@@ -27,7 +29,7 @@ void loop()
 {
     if ( Serial.available()>0 )
     {
-        delay(50);        //48Bytes
+//        delay(50);        //48Bytes
         if( !SerialStringRece() ){
             SerialStringProcess();
         }

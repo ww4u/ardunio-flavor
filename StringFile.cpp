@@ -13,11 +13,12 @@ extern pumptimer pump[PUMP_LIMIT];
 int SerialStringRece(void)
 {       
     rxCache = Serial.readStringUntil('\n');        
-    rxCache.toCharArray( cmdBuff.cache, rxCache.length() );
+    rxCache.toCharArray( cmdBuff.cache, rxCache.length()+1 );
 #ifdef DEBUG
+    Serial.println(rxCache);
     Serial.println(cmdBuff.cache);
     Serial.print(" >> ");
-    Serial.println(rxCache.length());  
+    Serial.println(rxCache.length()+1 );  
 #endif
  
     cmdBuff.psub[0] = strtok(cmdBuff.cache, " ");        
@@ -233,7 +234,7 @@ int SerialStringProcess(void)
         return 0;
     }
     if( strcmp(cmdBuff.psub[2], "VERSION?" ) == 0 ){
-        Serial.println( "00,01" );
+        Serial.println( "00.01" );
         return 0;
     }
     return -2;

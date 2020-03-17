@@ -104,7 +104,7 @@ void pumpRun(int index, bool run_state)
 void pumpClean(void)
 {
     for(int i=1; i<PUMP_LIMIT; i++){
-        pumpMinute( i, 5 );
+        pumpMinute( i, PUMPMINUTE );
         delay(200);
     }
     minute.recondTime = 0;

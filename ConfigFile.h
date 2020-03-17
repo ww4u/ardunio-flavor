@@ -5,6 +5,7 @@
 
 #define PUMPOPEN     LOW
 #define PUMPCLOSE    HIGH
+#define PUMPMINUTE   3
 #define PUMP_LIMIT   6
 #define PUMP_ALL     0
 #define RATIO_ADDR   0
