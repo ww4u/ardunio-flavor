@@ -2,7 +2,16 @@
 #ifndef FUNCTION_FILE
 #define FUNCTION_FILE
 
-
+#define PUMPOPEN     LOW
+#define PUMPCLOSE    HIGH
+#define PUMPMINUTE   3
+#define PUMP_LIMIT   6
+#define PUMP_ALL     0
+#define RATIO_ADDR   0
+#define TOTAL_ADDR   20
+#define MINUTE_ADDR  40  
+#define LENFTH_ADDR  80 
+#define RECOND_ADDR  120
 
 typedef struct coretimer
 {

@@ -1,6 +1,6 @@
 //--<include>--
 #include "Arduino.h"
-#include "ConfigFile.h"
+//#include "ConfigFile.h"
 #include "FunctionFile.h"
 #include "StringFile.h"
 

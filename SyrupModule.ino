@@ -1,8 +1,8 @@
 
 //--<#define>--
 
-#include <stdio.h>
-#include "ConfigFile.h"
+//#include <stdio.h>
+//#include "ConfigFile.h"
 #include "StringFile.h"
 #include "FunctionFile.h"
 
